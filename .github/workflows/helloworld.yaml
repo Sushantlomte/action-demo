@@ -19,10 +19,10 @@ jobs:
         run: echo "Hello world"
   deploy:
     runs-on: ubuntu-latest
-    needs: build
+ #   needs: build
     steps:
     #  - name: Checkout
     #    uses: actions/checkout@v2
       - name: Deploy
-        run: echo "good bye world"
+        run: echo "good bye world123"
         shell: bash
