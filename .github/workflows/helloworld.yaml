@@ -1,17 +1,17 @@
 name: hello world
-on: 
-    push:
-        branches:
-            - main
-    pull_request:
-        branches:
-            - main
-    Workflow_dispatch:
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+   Workflow_dispatch: null
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v2
-            - name: Hello world
-              run: echo "Hello world"git
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Hello world
+        run: echo "Hello world"git
