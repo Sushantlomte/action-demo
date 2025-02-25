@@ -1,0 +1,17 @@
+name: hello world
+on: 
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+    Workflow_dispatch:
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+            - name: Hello world
+              run: echo "Hello world"git
